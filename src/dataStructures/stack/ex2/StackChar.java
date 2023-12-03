@@ -1,4 +1,4 @@
-package stack.ex2;
+package dataStructures.stack.ex2;
 
 public class StackChar {
     private int maxSize;

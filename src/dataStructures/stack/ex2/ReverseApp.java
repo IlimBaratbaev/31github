@@ -1,4 +1,4 @@
-package stack.ex2;
+package dataStructures.stack.ex2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

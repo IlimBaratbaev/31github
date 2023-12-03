@@ -1,4 +1,4 @@
-package stack.ex1;
+package dataStructures.stack.ex1;
 
 public class StackLong {
     private int maxSize;
