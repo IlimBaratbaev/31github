@@ -1,8 +1,8 @@
-package dataStructures.stack.ex2;
+package dataStructures.stackAndQueues.stack;
 
 import java.io.IOException;
 
-import static dataStructures.stack.ex2.ReverseApp.getString;
+import static dataStructures.stackAndQueues.stack.ReverseApp.getString;
 
 public class BracketsApp {
     public static void main(String[] args) throws IOException {

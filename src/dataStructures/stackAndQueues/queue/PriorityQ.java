@@ -1,4 +1,4 @@
-package dataStructures.queue;
+package dataStructures.stackAndQueues.queue;
 
 public class PriorityQ {
     private int maxSize;

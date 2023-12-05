@@ -1,4 +1,4 @@
-package dataStructures.stack.ex1;
+package dataStructures.stackAndQueues.stack;
 
 public class StackApp {
     public static void main(String[] args) {

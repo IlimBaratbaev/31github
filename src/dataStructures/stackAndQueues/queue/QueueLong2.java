@@ -1,4 +1,4 @@
-package dataStructures.queue;
+package dataStructures.stackAndQueues.queue;
 // реализация очереди без счетчика элементов
 public class QueueLong2 {
     private int maxSize;

@@ -1,4 +1,4 @@
-package dataStructures.stack.ex2;
+package dataStructures.stackAndQueues.stack;
 
 public class Reverser {
 
@@ -11,13 +11,13 @@ public class Reverser {
 
     public String doReverse() {
         int stackSize = input.length();
-        StackChar stackChar = new StackChar(stackSize);
+        StackX stackX = new StackX(stackSize);
         for (int i = 0; i < input.length(); i++) {
-            stackChar.push(input.charAt(i));
+            stackX.push(input.charAt(i));
         }
         output = "";
-        while (!stackChar.isEmpty()) {
-            output = output + stackChar.pop();
+        while (!stackX.isEmpty()) {
+            output = output + stackX.pop();
         }
         return output;
     }

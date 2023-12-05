@@ -1,4 +1,4 @@
-package dataStructures.stack.ex2;
+package dataStructures.stackAndQueues.stack;
 
 public class BracketChecker {
     private String input;
@@ -9,20 +9,20 @@ public class BracketChecker {
 
     public void check() {
         int stackSize = input.length();
-        StackChar stackChar = new StackChar(stackSize);
+        StackX stackX = new StackX(stackSize);
         for (int i = 0; i < stackSize; i++) {
             char ch = input.charAt(i);
             switch (ch) {
                 case '{':
                 case '[':
                 case '(':
-                    stackChar.push(ch);
+                    stackX.push(ch);
                     break;
                 case '}':
                 case ']':
                 case ')':
-                    if (!stackChar.isEmpty()) {
-                        char chx = stackChar.pop();
+                    if (!stackX.isEmpty()) {
+                        char chx = stackX.pop();
                         if ((ch == '}' && chx != '{') ||
                                 (ch == ']' && chx != '[') ||
                                 (ch == ')' && chx != '(')
@@ -38,7 +38,7 @@ public class BracketChecker {
                     break;
             }
         }
-        if(!stackChar.isEmpty()) {
+        if(!stackX.isEmpty()) {
             System.out.println("Error: missing right delimiter");
         }
     }

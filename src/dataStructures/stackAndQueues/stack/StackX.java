@@ -1,11 +1,11 @@
-package dataStructures.stack.ex2;
+package dataStructures.stackAndQueues.stack;
 
-public class StackChar {
+public class StackX {
     private int maxSize;
     private char[] stackArray;
     private int top;
 
-    public StackChar(int size) {
+    public StackX(int size) {
         maxSize = size;
         stackArray = new char[maxSize];
         top = -1;
@@ -29,5 +29,19 @@ public class StackChar {
 
     public boolean isFull() {
         return top == maxSize - 1;
+    }
+    public int size() {
+        return top + 1;
+    }
+    public char peekN(int n) {
+        return stackArray[n];
+    }
+    public void displayStack(String s) {
+        System.out.print(s);
+        System.out.print("Stack (bottom-->top): ");
+        for (int i = 0; i < size(); i++) {
+            System.out.print(peekN(i) + ' ');
+        }
+        System.out.println();
     }
 }
