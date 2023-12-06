@@ -44,29 +44,29 @@ public class InToPost {
     }
     public void gotOper(char opThis, int prec1) {
         while (!theStack.isEmpty()) {
-            char onTop = theStack.pop();
-            if (onTop == '(') {
-                theStack.push(onTop);
+            char opTop = theStack.pop();
+            if (opTop == '(') {
+                theStack.push(opTop);
                 break;
             }
             else {
                 int prec2;
-                if (onTop == '+' || onTop == '-') {
+                if (opTop == '+' || opTop == '-') {
                     prec2 = 1;
                 }
                 else {
                     prec2 = 2;
                 }
                 if (prec2 < prec1) {
-                    theStack.push(onTop);
+                    theStack.push(opTop);
                     break;
                 }
                 else {
-                    output = output + onTop;
+                    output = output + opTop;
                 }
             }
-            theStack.push(opThis);
         }
+        theStack.push(opThis);
     }
     public void gotParen(char ch) {
         while (!theStack.isEmpty()) {

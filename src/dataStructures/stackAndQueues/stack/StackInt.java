@@ -1,25 +1,25 @@
 package dataStructures.stackAndQueues.stack;
 
-public class StackX {
+public class StackInt {
     private int maxSize;
-    private char[] stackArray;
+    private int[] stackArray;
     private int top;
 
-    public StackX(int size) {
+    public StackInt(int size) {
         maxSize = size;
-        stackArray = new char[maxSize];
+        stackArray = new int[maxSize];
         top = -1;
     }
 
-    public void push(char ch) {
-        stackArray[++top] = ch;
+    public void push(int j) {
+        stackArray[++top] = j;
     }
 
-    public char pop() {
+    public int pop() {
         return stackArray[top--];
     }
 
-    public char peek() {
+    public int peek() {
         return stackArray[top];
     }
 
@@ -33,7 +33,7 @@ public class StackX {
     public int size() {
         return top + 1;
     }
-    public char peekN(int n) {
+    public int peekN(int n) {
         return stackArray[n];
     }
     public void displayStack(String s) {
