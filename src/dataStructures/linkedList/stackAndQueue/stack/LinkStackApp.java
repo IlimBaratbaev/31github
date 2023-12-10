@@ -1,4 +1,4 @@
-package dataStructures.linkedList.stack;
+package dataStructures.linkedList.stackAndQueue.stack;
 
 public class LinkStackApp {
     public static void main(String[] args) {

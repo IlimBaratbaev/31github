@@ -1,9 +1,9 @@
-package dataStructures.linkedList.stack;
+package dataStructures.linkedList.stackAndQueue.stack;
 
-import dataStructures.linkedList.twoWayLinkedList.Link;
+import dataStructures.linkedList.stackAndQueue.LinkF;
 
 public class LinkList {
-    private LinkForStack first;
+    private LinkF first;
 
     public LinkList() {
         first = null;
@@ -14,19 +14,19 @@ public class LinkList {
     }
 
     public void insertFirst(long dd) {
-        LinkForStack newLink = new LinkForStack(dd);
+        LinkF newLink = new LinkF(dd);
         newLink.next = first;
         first = newLink;
     }
 
     public long deleteFirst() {
-        LinkForStack temp = first;
+        LinkF temp = first;
         first = first.next;
         return temp.dData;
     }
 
     public void displayList() {
-        LinkForStack current = first;
+        LinkF current = first;
         while (current != null) {
             current.displayLink();
             current = current.next;
