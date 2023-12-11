@@ -1,6 +1,6 @@
 package dataStructures.linkedList.stackAndQueue.stack;
 
-import dataStructures.linkedList.stackAndQueue.LinkF;
+import dataStructures.linkedList.LinkF;
 
 public class LinkList {
     private LinkF first;

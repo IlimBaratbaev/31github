@@ -1,7 +1,5 @@
 package dataStructures.linkedList.stackAndQueue.queue;
 
-import dataStructures.linkedList.stackAndQueue.LinkF;
-
 public class LinkQueue {
     private FirstLastList theList;
     public LinkQueue() {

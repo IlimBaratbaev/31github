@@ -1,4 +1,4 @@
-package dataStructures.linkedList.stackAndQueue;
+package dataStructures.linkedList;
 
 public class LinkF {
     public long dData;

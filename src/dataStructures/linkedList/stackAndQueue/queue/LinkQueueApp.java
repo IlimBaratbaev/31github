@@ -1,7 +1,5 @@
 package dataStructures.linkedList.stackAndQueue.queue;
 
-import dataStructures.linkedList.stackAndQueue.LinkF;
-
 public class LinkQueueApp {
     public static void main(String[] args) {
         LinkQueue linkQueue = new LinkQueue();
