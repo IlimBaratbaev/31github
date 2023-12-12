@@ -8,6 +8,12 @@ public class SortedList {
     public SortedList() {
         first = null;
     }
+    public SortedList(LinkF[] linkArr) {
+        first = null;
+        for (int i = 0; i < linkArr.length; i++) {
+            insert(linkArr[i].dData);
+        }
+    }
     public boolean isEmpty() {
         return first == null;
     }
