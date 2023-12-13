@@ -1,7 +1,7 @@
 package dataStructures.linkedList.doubleLinkedList;
 
 public class LinkDouble {
-    private long dData;
+    public long dData;
     public LinkDouble next;
     public LinkDouble previous;
     public LinkDouble(long data) {
