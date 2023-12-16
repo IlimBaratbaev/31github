@@ -33,6 +33,18 @@ public class SortedLinkList {
         else {
             previous.setNext(newLink);
         }
-        newLink.setNext(previous);
+        newLink.setNext(current);
+    }
+    public long remove() {
+        Link temp = first;
+        first = first.getNext();
+        return temp.getData();
+    }
+    public void displayList() {
+        Link current = first;
+        while (current != null) {
+            current.displayData();
+            current = current.getNext();
+        }
     }
 }
