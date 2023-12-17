@@ -8,7 +8,7 @@ public class PQueueApp {
         char choice = ' ';
         long data;
         Scanner scan = new Scanner(System.in);
-        System.out.println("Wellcome. Use words for commands(1-push, 2-peek, 3 - pop, 4 show, e - exit)");
+        System.out.println("Welcome. Use words for commands(1-push, 2-peek, 3 - pop, 4 show, e - exit)");
         while (true) {
             System.out.print("Choose command: ");
             choice = scan.next().charAt(0);
